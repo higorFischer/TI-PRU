@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		{ 
 			icon: '<i class="fa fas fa-book-medical"></i>', 
 			name: "Doencas", 
-			onclick: () => goTo(`doencascronicas.html`)
+			onclick: () => goTo(`doencasCronicas.html`)
 		},
 		{ 
 			icon: '<i class="fa fa-solid fa-hospital"></i>', 
