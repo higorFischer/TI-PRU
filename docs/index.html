@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+  <link href="assets/images/favicon.png" rel="icon">
+  <title>Trabalho Interdisciplinar - Documentação</title>
+  <meta name="description" content="Documentação do projeto da disciplina de Trabalho Interdisciplinar">
+  <meta name="author" content="Rommel Carneiro (WebTech)">
+
+  <!-- Stylesheet ========================= -->
+  <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Document Wrapper  =============================== -->
+  <div id="main-wrapper">
+
+    <!-- Header  ============================ -->
+    <header id="header" class="sticky-top">
+      <!-- Navbar -->
+      <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+        <div class="container-fluid">
+          <!-- Sidebar Toggler -->
+          <button type="button" id="sidebarCollapse" class="navbar-toggler d-block d-md-none"><span></span><span
+              class="w-75"></span><span class="w-50"></span></button>
+
+          <!-- Logo -->
+          <a class="logo ml-md-3" href="index.html" title="iDocs Template"> <img src="assets/images/logo.png"
+              alt="iDocs Template"> </a>
+          <span class="text-2 ml-2">v2.0</span>
+          <!-- Logo End -->
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Content ============================ -->
+    <main id="content">
+
+      <!-- Sidebar Navigation	============================ -->
+      <div class="idocs-navigation bg-light">
+        <ul class="nav flex-column ">
+          <li class="nav-item"><a class="nav-link active" href="#ti_intro">Introdução</a> </li>
+          <li class="nav-item"><a class="nav-link" href="#ti_contexto">Contexto</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ti_concepcao">Concepção</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#ti_processo_dt">Design Thinking</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ti_especificacoes">Especificações</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ti_projeto_interfaces">Projeto de Interfaces</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#ti_metodologia">Metodologia</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#ti_ferramentas">Ferramentas</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ti_gestao_projeto">Gestao do Projeto</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ti_controle_versao">Controle de Versão</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#ti_solucao">Solução</a>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="#ti_video">Vídeo do Projeto</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ti_funcionalidades">Funcionalidades</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ti_estruturas_dados">Estruturas de Dados</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ti_modulos_apis">Módulos e APIs</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#ti_faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ti_referencias">Referências</a></li>
+        </ul>
+      </div>
+
+      <!-- Docs Content ============================ -->
+      <div class="idocs-content">
+        <div class="container">
+
+          <!-- Introdução ============================ -->
+          <section id="ti_intro">
+            <h2>Introdução</h2>
+            <p class="lead">Informações básicas do projeto como nome e membros da equipe.</p>
+
+            <section id="ti_intro_info">
+              <h4>Informações Gerais</h4>
+              <div class="row">
+                <div class="col-12">
+                  <ul class="list-unstyled">
+                    <li><strong>Projeto:</strong> (PrU) Prontuário Universal</li>
+                    <li><strong>Repositório GitHub:</strong> <a href="https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-20232-protocolo-unificado">Template Trabalho Interdisciplinar</a>
+                    </li>
+                    <li><strong>Membros da equipe:</strong>
+                      <ul>
+                        <li><a href="https://github.com/higorFischer">Higor Fischer de Paula Lopes</a></li>
+                        <li><a href="https://github.com/prizinh4">Priscila Andrade de Moraes</a></li>
+                        <li><a href="https://github.com/saadiuri">Iuri Saad Furtunato Fialho</a></li>
+                        <li><a href="https://github.com/rodrioliveirapuc">Rodrigo Oliveira Andrade de Vasconcelos</a></li>
+                        <li><a href="https://github.com/Rafael-Marcos">Rafael Marcos Almeida Cruz</a></li>
+                        <li><a href="https://github.com/AlvaroHT">Alvaro Henrique Tavares</a></li>
+                        <li><a href="https://github.com/JoaoJA">João de Jesus e Avila</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </section>
+          <hr class="divider">
+
+          <!-- Contexto ============================ -->
+          <section id="ti_contexto">
+            <h2>Contexto</h2>
+            <p class="lead">Detalhes sobre o espaço de problema, justificativas e os objetivos do projeto.</p>
+            <section>
+              <h5>Problema
+              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseProblema">Info</button></h5>
+              
+              <p>A ausência de um Prontuário Unificado no Sistema Único de Saúde brasileiro (SUS) apresenta uma série de problemas e desafios. Profissionais da saúde enfrentam diariamente dificuldades no acesso às informações completas dos pacientes, levando a erros de diagnóstico e prescrições médicas inadequadas. Os pacientes repetem os mesmos exames, aumentando custos e desperdiçando recursos públicos, devido à dificuldade de acesso aos resultados já realizados. Além disso, a demora no atendimento é comum, pois médicos não conseguem acessar rapidamente o histórico do paciente, o que pode ser crítico em casos mais graves. A transferência do paciente para outras unidades de saúde, resulta, muitas vezes, na interrupção do tratamento devido à falta de informações necessárias digitalizadas em tempo real, gera dificuldades de acompanhar o seu histórico de saúde, por estar em uma linguagem muito técnica e por estar em folha de papel, consequentemente causa dificuldades para os agentes públicos de saúde e das instituições governamentais para transferir eficientemente os recursos destinados à saúde.</p>
+            </section>
+
+            <section>
+              <h5>Objetivos
+              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseObjetivos">Info</button></h5>
+              
+              <p>Nosso principal objetivo é a criação de um prontuário unificado de saúde, um sistema centralizado que visa revolucionar a maneira como as informações de saúde dos pacientes são gerenciadas no contexto do Sistema Único de Saúde (SUS) no Brasil. Além disso, buscamos: </p>
+
+              <p>1. Facilitar  o transporte dialético entre pacientes e médicos,  , simplificando o compartilhamento de informações relevantes de forma eficiente e segura, tornando o diálogo médico-paciente mais dinâmico e esclarecedor, além de atenuar perdas de informações ou a produção de redundâncias. </p>
+              
+              <p> 2. Automatizar determinadas partes de consultas e processos, proporcionando aos profissionais de saúde um acesso instantâneo a históricos médicos detalhados, acelerando o diagnóstico e o tratamento, especialmente em situações de urgência e risco de vida. </p>
+              
+              <p> 3. Garantir a integridade e a acessibilidade dos exames médicos, eliminando o risco de danificação ou perda de resultados, permitindo que exames realizados por diferentes médicos estejam prontamente disponíveis quando necessário.</p>            </section>
+
+            <section>
+              <h5>Justificativa
+              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseJustificativa">Info</button></h5>
+                              
+              <p>O motivo de termos escolhido este tema se dá pelo setor de saúde enfrentar desafios significativos, no que diz respeito ao gerenciamento eficaz e seguro de informações clínicas dos pacientes. Atualmente, as informações de saúde de um paciente estão dispersas em diferentes sistemas, como os de hospitais, clínicas, laboratórios e consultórios médicos. Essa fragmentação de dados resulta em ineficiências operacionais, falta de coordenação entre os prestadores de cuidados de saúde e potenciais riscos para o paciente. Nesse contexto, a criação de um prontuário unificado de saúde é essencial. </p>
+              <p>
+As principais funções do projeto são: 
+
+<p>1.  Agilidade em um atendimento de emergência:  Em uma situação de emergência em que cada segundo é precioso para o paciente, um médico tendo em mãos informações básicas como: tipo sanguíneo, comorbidades, alergias, remédios que o paciente utiliza e etc. Agilizaria muito as funções do médico.      	 
+</p>
+<p>2.  Mais eficiência no diagnóstico do paciente:	Da mesma forma como citado no tópico acima, o fato de um médico saber esses tipos de informações do paciente, facilitaria em um diagnóstico do paciente já que o médico saberia o prontuário de tal. 
+</p>
+<p>3.  Uma integração dos setores de saúde: 	E recorrente a demora no diagnóstico de paciente pelo fato do seu problema precisar da análise de mais de um especialista, com a integração de um sistema onde médicos, independentemente de sua especialidade podem acessar, diminuiria o tempo do diagnóstico e poderia até mesmo poderia começar o tratamento de algum problema de saúde mais rápido.</p> 
+</p>
+<p>Nosso projeto foi baseado em entrevistas com médicos e também pacientes que utilizam tanto diariamente quanto ponderadamente o sistema de saúde.</p>
+            </section>
+
+            <section>
+              <h5>Público-alvo
+              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapsePublico">Info</button></h5>
+             
+              <p>O público alvo, de início, foi pensado como profissionais da área da saúde que atuam na área de urgência/emergência e têm necessidade de saber de imediato informações cruciais sobre os pacientes que chegam para receber atendimento, para que assim, maiores sejam suas chances de recuperação e sobrevivência. Por outro lado, também são pessoas com comorbidades/condições de saúde graves e que necessitam de atendimento de saúde constante e urgente na maioria das vezes e não possuem tempo hábil para reunir exames, disgnósticos físicos e etc. Na nossa ótica, não se é possível especificar certas características do público, pelo SUS ser um sistema para todos os cidadãos brasileiros. Nesse sentido, os profissionais e pacientes do sistema seriam de diversas faixas etárias e regiões geográficas, além de diversas escolaridades, possuindo apenas, maior necessidade do sistema aqueles pacientes que são de idades avançadas, iletrados e residentes de zonas de difícil acesso e/ou à margem da sociedade e, os profissionais que atendem em grandes centros urbanos, pelo volume maior de demandas urgentes que recebem diariamente.
+              </p>
+            </section>
+
+          </section>
+          <hr class="divider">
+
+          <!-- Concepção ============================ -->
+          <section id="ti_concepcao">
+            <h2>Concepção (Design Thinking)</h2>
+            <p class="lead">Detalhes do processo de discovery do projeto.
+            <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseConcepcao">Info</button></p>
+            <div class="alert alert-warning collapse" role="alert" id="collapseConcepcao">
+              <p>Apresente o processo de discovery do projeto. Com foco na experiência do usuário, esse processo abrange a compreensão do contexto do problema e das características do usuário, a definição do problema, a geração de ideias, a prototipagem e a elaboração de uma proposta de solução</p>
+            </div>
+
+            <section id="ti_processo_dt">
+              <h4>Processo de Design Thinking</h4>
+              <p>O arquivo que se segue apresenta o resultado desse processo.
+                <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseProcesso">Info</button>
+              </p>
+              <div class="alert alert-warning collapse" role="alert" id="collapseProcesso">
+                <p>Apresente o processo de Design Thinking realizado pelo grupo e documentado por meio do software Miro. No documento apresentado, devem ser incluídos: (1) a matriz CSD, (2) o mapa de stakeholders, (3) as personas, (4) as respectivas propostas de valor e (5) o processo de ideação identificando as ideias levantadas e sua priorização.</p>
+              </div>
+              <object data="assets/files/processo-dt.pdf" type="application/pdf" width="100%" height="500px">
+                <p>Não foi possível apresentar o arquivo PDF. Faça o download e abra no seu computador: <a href="/assets/files/processo-dt.pdf">Download</a></p>
+              </object>
+            </section>
+
+            <section id="ti_especificacoes">
+              <h4>Especificações do Projeto</h4>
+              <p>Documentação das especificações do projeto.
+                <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseEspecificacao">Info</button>
+              </p>
+              <div class="alert alert-warning collapse" role="alert" id="collapseEspecificacao">
+                <p>Apresente as especificações do projeto, incluindo as histórias de usuário e os requisitos funcionais e não funcionais.</p>
+              </div>
+
+              <section>
+                <h5>Histórias de Usuários</h5>
+                <p>Com base na análise das personas foram identificadas as seguintes histórias de usuários:
+                  <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseHistorias">Info</button>
+                </p>
+                <div class="alert alert-warning collapse" role="alert" id="collapseHistorias">
+                  <p>Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.</p>
+                </div>
+                <table class="table">
+                  <thead>
+                      <tr>
+                          <th scope="col">EU COMO...<code>PERSONA</code></th>
+                          <th scope="col">QUERO/PRECISO...<code>FUNCIONALIDADE</code></th>
+                          <th scope="col">PARA...<code>MOTIVO/VALOR</code></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th scope="row">Geralda, paciente</th>
+                          <td>Que minhas informações estejam centralizadas e armazenadas em um sistema de fácil acesso</td>
+                          <td>Para que eu não precise sempre levar meus exames para cada consulta de rotina que for, já que posso esquecer algum, pela idade e condição de saúde.</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Arnaldo, médico de urgência</th>
+                          <td>Que as principais informações dos pacientes, como alergias e tipo sanguíneo, sejam de meu conhecimento e de minha equipe assim que cheguem no hospital</td>
+                          <td>Que não haja nenhuma demora na hora de tratá-lo para que asssim, não piore o quadro do mesmo.</td>
+                      </tr>
+                  </tbody>
+                </table>
+              </section>
+
+              <section>
+                <h5>Requisitos</h5>
+                <p>As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+                  <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseRequisitos">Info</button>
+                </p>
+                <div class="alert alert-warning collapse" role="alert" id="collapseRequisitos">
+                  <p>Com base nas Histórias de Usuário, enumere os requisitos da sua
+                    solução. Classifique esses requisitos em dois grupos:</p>
+                  <ul>
+                    <li><a href="https://pt.wikipedia.org/wiki/Requisito_funcional">Requisitos Funcionais (RF)</a>:
+                      correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).</li>
+                    <li><a href="https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional">Requisitos Não Funcionais (RNF)</a>: correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).</li>
+                  </ul>
+
+                  <p>Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.</p>
+                </div>
+
+                <p><strong>Requisitos Funcionais</strong></p>
+                <table class="table">
+                  <thead>
+                      <tr>
+                          <th scope="col">ID</th>
+                          <th scope="col">Descrição do Requisito</th>
+                          <th scope="col">Prioridade</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <th scope="row">RF-001</th>
+                        <td>Cadastro de usuário</td>
+                        <td>BAIXA</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">RF-002</th>
+                        <td>Cadastro de profissional da saúde</td>
+                        <td>ALTA</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">RF-003</th>
+                        <td>Cadastro de informações do paciente</td>
+                        <td>ALTA</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF-004</th>
+                      <td>Cadastro de remédios</td>
+                      <td>ALTA</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF-005</th>
+                      <td>Listagem de exames</td>
+                      <td>ALTA</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF-006</th>
+                      <td>Pesquisa e filtro dos exames</td>
+                      <td>MÉDIA</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF-007</th>
+                      <td>Gráfico para mostragem dos dados</td>
+                      <td>MÉDIA</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF-008</th>
+                      <td>Possibilidade de colocar informações dentro de um exame</td>
+                      <td>MÉDIA</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF-009</th>
+                      <td>Cadastro de vacinas </td>
+                      <td>MÉDIA</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF-010</th>
+                      <td> Mostrar farmácias próximas </td>
+                      <td>BAIXA</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF-011</th>
+                      <td> Mostrar postos de saúde próximos </td>
+                      <td>BAIXA</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF-012</th>
+                      <td>Notificaçao de quando um exame estiver pronto por um e-mail</td>
+                      <td>BAIXA</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF-013</th>
+                      <td>Modo urgência para poder focar em informações do usuário</td>
+                      <td>ALTA</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RF-014</th>
+                      <td>Tela de acompanhamento de Doença crônicas</td>
+                      <td>MÉDIA</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <p><strong>Requisitos Não-Funcionais</strong></p>
+                <table class="table">
+                  <thead>
+                      <tr>
+                          <th scope="col">ID</th>
+                          <th scope="col">Descrição do Requisito</th>
+                          <th scope="col">Prioridade</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th scope="row">RNF-001</th>
+                          <td>O sistema deve ser responsivo para rodar em dispositivos móveis</td>
+                          <td>BAIXA</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">RNF-002</th>
+                          <td>Deve ser possível acessar com uma internet bem ruim </td>
+                          <td>BAIXA</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">RNF-003</th>
+                        <td>Deve ser possível acessar offline e ao conectar a uma rede, subir as alterações </td>
+                        <td>BAIXA</td>
+                      </tr>
+                        <tr>
+                        <th scope="row">RNF-004</th>
+                        <td>Deve funcionar como PWA </td>
+                        <td>BAIXA</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">RNF-004</th>
+                        <td>Deve ter Dark Theme </td>
+                        <td>BAIXA</td>
+                      </tr>
+                  </tbody>
+                </table>
+              </section>
+            </section>
+
+            <section id="ti_projeto_interfaces">
+              <h4>Projeto de Interface</h4>
+              <p>Artefatos relacionados com a interface e a interacão do usuário na proposta de solução.
+                <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseInterface">Info</button>
+              </p>
+              <div class="alert alert-warning collapse" role="alert" id="collapseInterface">
+                <p>Apresente a ideia de interface que está sendo prevista para o projeto. Inclua os wireframes, o user/screen flow e o protótipo interativo.</p>
+              </div>
+
+              <section>
+                <h5>User/Screen Flow e Protótipo interativo</h5>
+                <p>Artefatos relacionados com a interface e a interacão do usuário na solução proposta.
+                  <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseUserFlow">Info</button>
+                </p>
+                <div class="alert alert-warning collapse" role="alert" id="collapseUserFlow">
+                  <p>O fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe. <img  class="img-fluid" src="assets/images/exemplo-userflow.png" alt="Exemplo de fluxo de usuário">
+                  </p>
+                  <p>Um protótipo interativo apresenta o projeto de interfaces e permite ao usuário navegar pelas funcionalidades como se estivesse lidando com o software pronto. Veja o exemplo a seguir.<br>
+                    <iframe title="Protótipo interativo" src="https://marvelapp.com/prototype/4hd6091?emb=1&iosapp=false&frameless=false" width="600px" height="360px" allowtransparency="true" frameborder="0"></iframe>
+                  </p>
+                </div>
+                <p>
+                  <iframe width="768" height="432" src="https://miro.com/app/live-embed/uXjVMhgypnk=/?moveToViewport=-4257,-4419,10955,5673&embedId=10003686774" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+                </p>
+              </section>
+
+              <section>
+                <h5>Wireframes</h5>
+                <p>Protótipo de telas do sistema em baixa fidelidade (rascunhos).
+                  <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseWireframes">Info</button>
+                </p>
+                <div class="alert alert-warning collapse" role="alert" id="collapseWireframes">
+                  <p>Os Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface. <img  class="img-fluid" src="assets/images/exemplo-wireframe.png" alt="Exemplo de wireframe"></p>
+                </div>
+                <p><iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FxQR7jQyUZh2sHzGjjZMC1c%2FProtocolo-Universal%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-3%26viewport%3D297%252C433%252C0.17%26t%3DrkpJUfQELOrlYxFH-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A3%26mode%3Ddesign" allowfullscreen></iframe></iframe></p>
+              </section>
+
+            </section>
+          </section>
+
+          <hr class="divider">
+
+          <!-- Metodologia ============================ -->
+          <section id="ti_metodologia">
+            <h2>Metodologia</h2>
+            <p class="lead">Detalhes sobre a organização do grupo e o ferramental empregado.
+              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseMetodologia">Info</button>
+            </p>
+            <div class="alert alert-warning collapse" role="alert"  id="collapseMetodologia">
+              <p> Nesta parte da documentação iremos detalhar a metodologia que nossa equipe adotou para a realização deste projeto. O objetivo é proporcionar uma visão clara sobre como organizamos nosso trabalho, quais abordagens ágeis foram utilizadas, a divisão de papéis e tarefas, as ferramentas que desempenharam um papel fundamental e como gerenciamos a configuração do projeto. 
+                
+                Abordagem Ágil: Para garantir a eficiência e flexibilidade no desenvolvimento deste projeto, optamos por adotar uma abordagem ágil. Utilizamos práticas ágeis, como Scrum e Design Thinking, para promover a colaboração, a adaptação rápida a mudanças e o foco na entrega de valor aos nossos usuários. 
+                
+                Divisão de Papéis e Tarefas: A equipe foi organizada de acordo com a metodologia Scrum, com papéis bem definidos, incluindo o Scrum Master (Higor Fisher), o Product Owner (Priscila Andrade) e os membros do time de desenvolvimento. Essa estrutura permitiu uma clara distribuição de responsabilidades e comunicação eficiente. 
+                
+                GitHub e Gestão de Configuração: Utilizamos o GitHub como nossa plataforma principal para controle de versão e gestão de configuração. Isso nos permitiu acompanhar as mudanças no código-fonte, rastrear problemas, realizar revisões de código e garantir a integridade do projeto ao longo do tempo. 
+                
+                Design Thinking: A abordagem de Design Thinking foi incorporada ao nosso processo para garantir que a solução desenvolvida estivesse centrada no usuário. Realizamos sessões de brainstorming, entrevistas com stakeholders para compreender melhor as necessidades e expectativas dos usuários finais. 
+                
+                Ferramentas de Acompanhamento: Para monitorar o andamento do projeto, a execução de tarefas e o status de desenvolvimento da solução, empregamos uma ferramenta online, o Trello. Essa ferramenta nos permitiu criar quadros de tarefas, atribuir responsabilidades, e acompanhar o progresso de forma transparente. 
+                 </p>
+            </div>
+
+            <section>
+              <h4 id="ti_ferramentas">Ferramentas</h4>
+              <p> Aqui está a lista das ferramentas que utilizamos durante o desenvolvimento do projeto, juntamente com justificativas para suas escolhas: 
+                
+                Editor de Código (Visual Studio Code): Optamos pelo Visual Studio Code devido à sua ampla gama de extensões, que facilitam o desenvolvimento e a correção de código. 
+                
+                Ferramentas de Comunicação (Discord): Para comunicação eficaz entre os membros da equipe, escolhemos o Discord,  pelo diferencial da flexibilidade que os administradores têm de definir regras específicas para cada grupo de usuários ou sala de discussão. permitindo a troca de mensagens instantâneas, chamadas de vídeo e compartilhamento de documentos. 
+                
+                Ferramentas de Diagramação (Figma): Utilizamos o Figma para criar diagramas, fluxos de processo e wireframes, o que nos ajudou a visualizar e comunicar conceitos de forma clara. 
+                
+                Plataforma de Hospedagem (Heroku): Iremos utilizar o Heroku para hospedar nossa aplicação devido à sua escalabilidade, confiabilidade e recursos de segurança. 
+                
+                Essas são algumas informações básicas sobre a metodologia e as ferramentas que utilizamos no projeto.
+                <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseFerramentas">Info</button>
+              </p>
+              <div class="alert alert-warning collapse" role="alert" id="collapseFerramentas">
+                <p>Liste as ferramentas empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível. Inclua itens como: (1) Editor de código, ferramentas de comunicação, ferramentas de diagramação, plataformas de hospedagem, entre outras.</p>
+              </div>
+              <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Ambiente</th>
+                        <th scope="col">Plataforma</th>
+                        <th scope="col">Link de Acesso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Processo de Design Thinking</td>
+                        <td>Miro</td>
+                        <td><a href="https://miro.com/app/board/uXjVMoAhK5k=">https://miro.com/app/board/uXjVMoAhK5k=</td>
+                    </tr>
+                    <tr>
+                        <td>Repositório de código</td>
+                        <td>GitHub</td>
+                        <td><a href="https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-20232-protocolo-unificado">https://github.com/ICEI-PUC-Minas-PPLCC-TI/ti-1-ppl-cc-m-20232-protocolo-unificado</a></td>
+                    </tr>
+                    <tr>
+                        <td>Protótipo Interativo</td>
+                        <td>MavelApp ou Figma</td>
+                        <td><a href="https://www.figma.com/file/xQR7jQyUZh2sHzGjjZMC1c/Untitled?type=design&node-id=50%3A11&mode=design&t=mvU8t0Qaa81QWrgg-1">https://www.figma.com/file/xQR7jQyUZh2sHzGjjZMC1c/Untitled?type=design&node-id=50%3A11&mode=design&t=mvU8t0Qaa81QWrgg-1</a></td>
+                    </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section id="ti_gestao_projeto">
+              <h4>Gestão do Projeto</h4>
+              <p>Divisão de papéis no grupo e apresentação da estrutura da ferramenta de controle de tarefas (Kanban).
+                <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapsePapeis">Info</button>
+              </p>
+              <div class="alert alert-warning collapse" role="alert" id="collapsePapeis">
+                <p>Apresente a divisão de papéis e tarefas entre os membros do grupo. Informe quem é o Scrum Master, o Product Owner e os desenvolvedores. Informe também quem é o responsável pela documentação do projeto.</p>
+                <p>Apresente o quadro de gerenciamento do time (Kanban), seu formato e as experiências na utilização dessa ferramenta (GitHub Projects) </p>
+              </div>
+              <p>
+                Nossa equipe se dividiu de uma maneira mais dinâmica onde ninguem é dono de nenhuma tarefa. Dessa forma, cada um pode pegar uma gama de tarefas diferente.
+                Nos estruturamos nossos trabalhos utilizando a estrutura de kanban, dividido em TODO, DOING e DONE. Dessa forma conseguimos separar os tópicos 
+                que seriam necessário preencher e dividir em tarefas. Temos também uma seção de links onde colocamos links que possam ser úteis para nós.
+                <img src="./assets/images/kanban.png"/>
+              </p>
+            </section>
+
+
+            <section id="ti_controle_versao">
+              <h4>Controle de Versão</h4>
+              <p>Estrutura do fluxo de trabalho no ambiente do GitHub.
+              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseVersao">Info</button>
+              </p>
+              <div class="alert alert-warning collapse" role="alert" id="collapseVersao">
+                <p>Discuta como a configuração do projeto foi feita na ferramenta de versionamento (GitHub). Exponha como a gerência de tags, merges, commits e branchs é realizada. Discuta como a gerência de issues foi realizada.<br>
+                  <img class="img-fluid" src="assets/images/exemplo-workflow.png" alt="">
+                </p>
+              </div>
+              <p>No controle de versão, tentamos seguir o fluxo Gitflow. Ele funciona segindo um branch principal, cada nova tarefa leva a um novo branch
+                fazendo com que para poder adicionar a tarefa dentro do fluxo principal, seja necessário fazer um Pull Request. Como não temos ainda uma versão 
+                principal de produção, não fizemos a separação entre develop e main.
+              </p>
+            </section>
+          </section>
+          <hr class="divider">
+
+          <!-- Funcionalidades ==================== -->
+          <section id="ti_solucao">
+            <h2>Solução</h2>
+            <p class="lead">Esta seção apresenta todos os detalhes da solução criada no projeto.
+              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseSolucao">Info</button>
+            </p>
+            <div class="alert alert-warning collapse" role="alert" id="collapseSolucao">
+              <p>Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução.</p>
+              <p>Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.</p>
+            </div>
+
+            <section id="ti_video">
+              <h4>Video do Projeto</h4>
+              <p>O vídeo a seguir traz uma apresentação do problema que a equipe está tratando e a proposta de solução.
+                <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseVideo">Info</button>
+              </p>
+              <div class="alert alert-warning collapse" role="alert" id="collapseVideo">
+                <p>O video de apresentação é voltado para que o público externo possa conhecer a solução. O formato é livre, sendo importante que seja apresentado o problema e a solução numa linguagem descomplicada e direta.</p>
+                <p>Utilize o recurso de compartilhamento via embed e inclua o vídeo logo abaixo.</p>
+              </div>
+              <p>......  COLOQUE AQUI O SEU VIDEO ......</p>
+            </section>
+
+            <section id="ti_funcionalidades">
+              <h4>Funcionalidades</h4>
+              <p>Esta seção apresenta as funcionalidades da solução.
+              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseFuncionalidades">Info</button>
+              </p>
+              <div class="alert alert-warning collapse" role="alert" id="collapseFuncionalidades">
+                <p>Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução.</p>
+                <p>Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.</p>
+              </div>
+
+              <section>
+                <h5>Funcionalidade 1 - Cadastro de Contatos<span class="exemplo">EXEMPLO</span></h5>
+                <p>Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema</p>
+                <ul class="list-unstyled">
+                  <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Contatos</a></li>
+                  <li><strong>Instruções de acesso: </strong><ul>
+                    <li>Abra o site e efetue o login</li>
+                    <li>Acesse o menu principal e escolha a opção Cadastros </li>
+                    <li>Em seguida, escolha a opção Contatos</li>
+                  </ul></li>
+                </ul>
+                <p class="text-center"><img class="img-fluid" src="assets/images/exemplo-funcionalidade.png" alt="Tela Cadastro de Contatos"></p>
+              </section>
+            </section>
+
+            <!-- Estruturas de dados =============== -->
+            <section id="ti_estruturas_dados">
+              <h4>Estruturas de Dados</h4>
+              <p>Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.
+                <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseEstruturas">Info</button>
+              </p>
+              <div class="alert alert-warning collapse" role="alert" id="collapseEstruturas">
+                <p>Apresente as estruturas de dados utilizadas na solução tanto para dados utilizados na essência da aplicação quanto outras estruturas que foram criadas para algum tipo de configuração</p>
+                <p>Nomeie a estrutura, coloque uma descrição sucinta e apresente um exemplo em formato JSON.</p>
+              </div>
+                
+              <section>
+                <h5>Estrutura de Dados - Pacientes<span class="exemplo">EXEMPLO</span></h5>
+                <p>Registro dos pacientes cadastrados</p>
+                <pre>
+                "pacientes": [
+                  {
+                    "nome": "Priscila Andrade de Moraes",
+                    "dataNascimento": "2003-04-16",
+                    "senha": "pri123",
+                    "email": "pri@email.com",
+                    "endereco": "Avenida do Povo, 171 - Recanto da Paz",
+                    "sexo": "feminino",
+                    "tipoSanguineo": "A+",
+                    "etnia": "branca",
+                    "estadoCivil": "solteiro",
+                    "altura": "165",
+                    "peso": "48",
+                    "alergias": "Nenhuma conhecida",
+                    "historicoDeDoencas": "Nenhum",
+                    "id": 1
+                  }
+                 ]
+                </pre>
+              </section>
+
+              <section>
+                <h5>Estrutura de Dados - Exames<span class="exemplo">EXEMPLO</span></h5>
+                <p>Registro dos exames cadastrados</p>
+                <pre>
+                  "exames": [
+                    {
+                      "id": 1,
+                      "nome": "Glicemia de Jejum",
+                      "referenciaMax": 110,
+                      "referenciaMin": null,
+                      "unidade": "mg/dL"
+                    }
+                  ]
+                </pre>
+              </section>
+
+              <section>
+                <h5>Estrutura de Dados - Exames do Paciente <span class="exemplo">EXEMPLO</span></h5>
+                <p>Registro dos exames feitos por determinado paciente</p>
+                <pre>
+                 "examesPaciente": [
+                   {
+                      "exame": 1,
+                      "paciente": 1,
+                      "valor": 123,
+                      "data": "2023-12-22",
+                      "id": 1
+                    }
+                  ]
+                </pre>
+              </section>
+
+              <section>
+                <h5>Estrutura de Dados - Vacinas<span class="exemplo">EXEMPLO</span></h5>
+                <p>Registro das Vacinas cadastradas</p>
+                <pre>
+                  "vacinas": [
+                    {
+                      "id": 1,
+                      "nome": "Tetano"
+                    }
+                  ]                
+                </pre>
+              </section>
+
+              <section>
+                <h5>Estrutura de Dados - Vacinas do Paciente <span class="exemplo">EXEMPLO</span></h5>
+                <p>Registro das Vacinas tomadas por determinado paciente</p>
+                <pre>
+                  "vacinaPaciente": [
+                    {
+                      "vacina": 1,
+                      "paciente": 2,
+                      "data": "",
+                      "id": 1
+                    }
+                  ]
+                </pre>
+              </section>
+
+              <section>
+                <h5>Estrutura de Dados - Medicamentos<span class="exemplo">EXEMPLO</span></h5>
+                <p>Registro dos Medicamentos cadastrados</p>
+                <pre>
+                  "medicamentos": [
+                    {
+                      "id": 1,
+                      "nome": "Nimesulida"
+                    }
+                  ]                
+                </pre>
+              </section>
+
+              <section>
+                <h5>Estrutura de Dados - Medicamentos do Paciente <span class="exemplo">EXEMPLO</span></h5>
+                <p>Registro dos Medicamentos prescrevidos para determinado paciente</p>
+                <pre>
+                  "MedicamentoPaciente": [
+                    {
+                      "medicamento": 1,
+                      "paciente": 2,
+                      "dosagem": 0,
+                      "data": "",
+                      "id": 1
+                    }
+                  ]
+                </pre>
+              </section>
+
+              <section>
+                <h5>Estrutura de Dados - Doenças Crônicas<span class="exemplo">EXEMPLO</span></h5>
+                <p>Registro das Doenças Crônicas cadastradas</p>
+                <pre>
+                  "doencasCronicas": [
+                    {
+                      "id": 1,
+                      "nome": "Obesidade"
+                    }
+                  ]                
+                </pre>
+              </section>
+
+              <section>
+                <h5>Estrutura de Dados - Doenças Crônicas do Paciente <span class="exemplo">EXEMPLO</span></h5>
+                <p>Registro das Doenças Crônicas de determinado paciente</p>
+                <pre>
+                  "doencasCronicasPaciente": [
+                    {
+                      "diagnostico": 1,
+                      "paciente": 2,
+                      "data": "",
+                      "medicamentos": "1234",
+                      "ultimaConsulta": "",
+                      "resumoConsulta": "123412",
+                      "procedimentos": "1234",
+                      "id": 1
+                    }
+                  ]
+                </pre>
+              </section>
+
+
+            </section>
+
+            <!-- Módulos e APIs ================= -->
+            <section id="ti_modulos_apis">
+              <h4>Módulos e APIs</h4>
+              <p>Esta seção apresenta os módulos e APIs utilizados na solução.
+                <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseModulos">Info</button>
+              </p>
+              <div class="alert alert-warning collapse" role="alert" id="collapseModulos">
+                <p>Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1) Frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas para acesso a dados, serviços, etc.</p>
+              </div>
+
+              <section>
+                <h5>Ícones:</h5>
+                <ul>
+                  <li>Font Awesome - <a target="_blank" href="https://fontawesome.com/">https://fontawesome.com/</a><span class="exemplo">EXEMPLO</span></li>
+                </ul>
+              </section>
+
+              <section>
+                <h5>API's:</h5>
+                <ul>
+                  <li>Open Cage - <a target="_blank" href="https://opencagedata.com/">https://opencagedata.com/</a><span class="exemplo">EXEMPLO</span></li>
+                  <li>API do Google Maps - <a target="_blank" href="https://developers.google.com/maps/documentation">https://developers.google.com/maps/documentation</a><span class="exemplo">EXEMPLO</span></li>
+                </ul>
+              </section>
+
+              <section>
+                <h5>Scripts:</h5>
+                <ul>
+                  <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a><span class="exemplo">EXEMPLO</span></li>
+                  <li>Bootstrap 4 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a><span class="exemplo">EXEMPLO</span></li>
+                </ul>
+              </section>
+              
+            </section>
+
+          </section>
+          <hr class="divider">
+
+          <!-- FAQ ============================ -->
+          <section id="ti_faq">
+            <h2>FAQ</h2>
+            <p class="lead">Perguntas e respostas comuns associadas ao projeto.
+              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseFAQ">Info</button>
+            </p>
+            <div class="alert alert-warning collapse" role="alert" id="collapseFAQ">
+              <p>Apresente uma lista de perguntas e respostas comuns associadas ao projeto. Inclua perguntas como: (1) detalhes de acesso e uso do projeto; (2) informações sobre a instalação e configuração da aplicação; (3) questões sobre a manutenção da aplicação; (4) detalhes sobre a integração da aplicação com outros sistemas; (5) questões sobre a segurança da aplicação.</p>
+            </div>
+
+            <span class="exemplo">EXEMPLO</span>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="accordion accordion-alterate arrow-right" id="popularTopics">
+                  <div class="card">
+                    <div class="card-header" id="heading1">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse1"
+                          aria-expanded="false" aria-controls="collapse1">Como os pacientes podem acessar e usar o prontuário unificado?</a> </h5>
+                    </div>
+                    <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#popularTopics">
+                      <div class="card-body"> Através de criação de login e senha e, em seguida, cadastrando as próprias informações de saúde e pessoais.
+                         </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading2">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2"
+                          aria-expanded="false" aria-controls="collapse2">Quais são os passos básicos para instalar a aplicação?</a> </h5>
+                    </div>
+                    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
+                      <div class="card-body"> Não é necessário instalação, ela está disponível online. </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="heading3">
+                      <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse3"
+                          aria-expanded="false" aria-controls="collapse3">What are some examples of permitted end
+                          products?</a> </h5>
+                    </div>
+                    <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#popularTopics">
+                      <div class="card-body"> Iisque persius interesset his et, in quot quidam persequeris vim, ad mea
+                        essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna
+                        imperdiet. </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </section>
+          <hr class="divider">
+
+          <!-- Referências Bibliográficas ================= -->
+          <section id="ti_referencias">
+            <h2>Referências Bibliográficas</h2>
+            <p class="lead">Esta seção apresenta as referências bibliográficas utilizadas no projeto.
+              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse" href="#collapseReferencias">Info</button></p>
+            <div class="alert alert-warning collapse" role="alert" id="collapseReferencias">
+              <p>Apresente as referências bibliográficas utilizadas no projeto. Inclua itens como: (1) livros, artigos, tutoriais, etc. utilizados no desenvolvimento da solução; (2) links para sites, blogs, etc. utilizados no desenvolvimento da solução.</p>
+            </div>
+            <p>ALEXANDRE, R. S. Atualizações sobre o Prontuário Unificado: benefícios e inclusão no Sistema Único de Saúde e Planos. REPOSITORIO PUCSP, 2023.</p>
+            <p>NUNES, C. C.; MA, S.; FILHO, M. S. T. Armazenamento descentralizado no Sistema Único de Saúde brasileiro (SUS) usando Interplanetary File System (IPFS) e Blockchain. Revista de direito, v. 13, n. 01, p. 01–25, 2021.</p>
+            <p>DEVPLENO. Navigator Geolocation API - Sabendo a Localização do Usuário. Disponível em: <a target="_blank" href="https://www.youtube.com/watch?v=WrzA8oqcxjA">https://www.youtube.com/watch?v=WrzA8oqcxjA</a>.</p>
+          </section>
+
+        </div>
+      </div>
+    <!-- Content end -->
+    </main>
+
+    <!-- Footer
+  ============================ -->
+    <footer id="footer" class="section bg-dark footer-text-light">
+      <div class="container">
+        <p class="text-center"><strong>Trabalho Interdisciplinar - ICEI PUC Minas</strong><br>Modelo adaptado de <a
+            href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/">iDocs</a>  - Design &amp; Develop by <a class="btn-link" target="_blank"
+            href="http://www.harnishdesign.net/">HarnishDesign</a></p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Document Wrapper end -->
+  </div>
+
+  <!-- Back To Top -->
+  <a id="back-to-top" data-toggle="tooltip" title="Topo" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript ============================ -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Highlight JS -->
+  <script src="assets/vendor/highlight.js/highlight.min.js"></script>
+  <!-- Easing -->
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- Custom Script -->
+  <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
+<style>
+  @media print {
+    #header, .idocs-navigation  { 
+      display: none !important;
+    }
+    .idocs-content {
+      margin-left: 0 !important;
+    }
+}
+</style>

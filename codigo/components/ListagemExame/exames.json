@@ -1,0 +1,38 @@
+{
+    "pedidos": [
+        {
+            "numeroPedido": "1",
+            "exames": [
+                {
+                    "nome": "Glicemia de Jejum",
+                    "data": "15-10-2023",
+                    "resultado": "110 mg/dL",
+                    "referencia": "Valores normais: 70-100 mg/dL"
+                },
+                {
+                    "nome": "Pressão Arterial",
+                    "data": "15-10-2023",
+                    "resultado": "120/80 mmHg",
+                    "referencia": "Valores normais: < 130/85 mmHg"
+                }
+            ]
+        },
+        {
+            "numeroPedido": "2",
+            "exames": [
+                {
+                    "nome": "Hemograma Completo",
+                    "data": "20-10-2023",
+                    "resultado": "Resultado C",
+                    "referencia": "Referência C"
+                },
+                {
+                    "nome": "Exame D",
+                    "data": "18-10-2023",
+                    "resultado": "12.5 g/dL",
+                    "referencia": "12.0 - 15.5 g/dL"
+                }
+            ]
+        }
+    ]
+}

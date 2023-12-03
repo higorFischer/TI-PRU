@@ -1,0 +1,22 @@
+body {
+    padding: 2%;
+    background-color: #9CCDEB;
+}
+
+.pgBranco {
+    background-color: white;
+    margin: 0;
+    padding-top: 3%;
+    text-align: center;
+    justify-content: center;
+}
+
+.exame-nome {
+    cursor: pointer;
+    margin-bottom: 0.5%;
+    transition: background-color 0.3s; /* Adiciona uma transição suave (vi na internet e gostei :D)*/
+  }
+  
+  .exame-nome:hover {
+    color: lightblue;
+  }

@@ -1,0 +1,76 @@
+body {
+    padding: 2%;
+    background-color: #9CCDEB;
+}
+
+.pgBranco {
+    background-color: white;
+    margin: 0;
+    padding-top: 3%;
+    text-align: center;
+    justify-content: center;
+}
+
+.btPesquisa {
+    text-align: left;
+}
+
+input {
+    width: 30%;
+}
+
+div2 {
+    float: right;
+    margin: 0 3%;
+}
+
+.grafico {
+    width: 30%;
+    text-align: center;
+    margin-right: 5%;
+}
+
+#tela2 {
+    width: 500px;
+    height: 300px;
+}
+
+div3 {
+    width: 70%;
+    margin: 3%;
+}
+
+divA {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+divB {
+    display: flex;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    font-family: arial;
+    text-decoration: underline;
+    margin: 3%;
+}
+
+table {
+    width: 70%;
+    background-color: #f3ebeb;
+    border-collapse: separate;
+    border-spacing: 20px;
+    margin-left: -35%;
+}
+
+tbody {
+    padding: 10px;
+}
+
+/*Eu estava tendo problemas na formatação da tabela e do grafico.
+Mas tive problemas em fazer da forma certa, pois algo está errado, mas não soube identificar onde.
+A pag foi feita de forma simples, mas pretendo altera-la durante a sprint 3*/

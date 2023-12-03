@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4169E1;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #4169E1;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header img {
+    max-width: 150px;
+    margin-right: 30px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    flex: 1; /* Ocupa o espaço restante horizontalmente para centralizar o texto */
+    text-align: center; /* Centralizar o texto do título */
+  }
+  
+  .container {
+    background-color: #4169E1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 96%;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333; /* Cor do texto */
+    background-color: #ffffff; /* Fundo branco */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Adicione transições suaves */
+  }
+  
+  .form-control:focus {
+    border-color: #ff0000; /* Mude a cor da borda ao focar no elemento */
+    outline: none; /* Remova a borda de foco padrão do navegador */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Adicione uma sombra ao focar no elemento */
+  }
+  
+  textarea.form-control {
+    resize: vertical;
+  }
+  
+  .btn {
+    display: block;
+    margin: 0 auto;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  #infoRegistradas {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  #infoRegistradas h2 {
+    margin-bottom: 20px;
+  }
+  
+  #infoRegistradas table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+  }
+  
+  #infoRegistradas th, #infoRegistradas td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #infoRegistradas th {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  #infoRegistradas tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  #infoRegistradas a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  #infoRegistradas a:hover {
+    text-decoration: underline;
+  }
+  
+  .delete-button {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    text-decoration: none;
+  }
+  #historicoConsultas {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #historicoConsultas h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #historicoConsultas table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #historicoConsultas th, #historicoConsultas td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #historicoConsultas th {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  #historicoConsultas tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  

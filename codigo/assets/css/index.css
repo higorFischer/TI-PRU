@@ -1,0 +1,138 @@
+:root {
+	--main-primary: red;
+	--main-warning: red;
+	--main-backgroud: #9CCEEA;
+	--main-backgroud-alfa: #9CCEEA55;
+	--urgent: #8A0829;
+	--navbar: #ddd;
+	--navbar-item: #9CCEEA;
+	--basic-shadow: 0px 0px 0px 0px rgba(0,0,0, .3);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+	background-color: #ddd;
+	height: calc(100vh - 30px);
+	width: 60px;
+	border-radius: 8px;
+	padding: 5px;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+.navbar-item {
+	margin-bottom: 10px;
+	text-align: center;
+	padding: 13px;
+	width: 45px;
+	border-radius: 6px;
+	background-color: var(--navbar-item);
+	border: none;
+	content: "";
+	cursor: pointer;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0, .3);
+}
+
+.navbar-item:last-of-type { margin-bottom: 1px; }
+.last-item{ margin-top: auto; }
+.navbar-item:active{ box-shadow: var(--basic-shadow); }
+
+#container { 
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	background-color: var(--main-backgroud);
+}
+
+#container.urgent-mode{
+	background-color: var(--urgent);
+
+}
+
+#content{
+	height: 100vh;
+	width: 100%;
+}
+
+
+.urgent-btn {
+	background-color: var(--urgent); 
+	color: #fff;
+}
+
+#form-exams {
+	background-color: white;
+	padding: 30px;
+	margin: 10px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+#my-exams {
+	background-color: white;
+	padding: 10px;
+	color: black;
+	margin: 10px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+
+.exam-container{
+	background-color: var(--main-backgroud-alfa);
+	box-shadow: var(--basic-shadow);
+	margin: 10px;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.exam-container p {
+	padding: 0;
+	margin: 0;
+}
+
+#exam-details{
+	width: 100%;
+	display: grid ;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+
+.login {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--main-backgroud-alfa);	
+}
+.login-container{
+	display: flex;
+	flex-direction: column;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,.3);
+	background-color: var(--main-backgroud);
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+}
+
+.login-container img {
+	margin: auto;
+	margin-bottom: 20px;
+	height: 120px;
+	width: 100%;
+}
+
+#cadastro-container{
+	background-color: var(--main-backgroud);
+}

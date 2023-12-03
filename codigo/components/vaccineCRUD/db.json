@@ -1,0 +1,138 @@
+{
+  "usuarios": [
+    {
+      "nome":"Larissa",
+      "idade":"18",
+      "sexo":"Feminino",
+      "raça":"Idigena",
+      "comorbidade": [
+        "nenhuma"
+      ],
+      "gestante":false,
+      "e-mail":"larissa123@gmail.com",
+      "vacinas":
+      {
+        "vacinasaplicadas": [
+          {
+            "nome":"Hepatite B",
+            "vencimento":"24/12/2024"
+          },
+          {
+            "nome":"Hepatite A",
+            "vencimento":"24/11/2023"
+          }
+        ]
+      }
+    },
+    {
+      "nome":"joao",
+      "idade":"19",
+      "sexo":"masculino",
+      "raça":"branco",
+      "comorbidade": [
+        "nenhuma"
+      ],
+      "gestante":false,
+      "e-mail":"joao123@gmail.com",
+      "vacinas":
+      {
+        "vacinasaplicadas": [
+          {
+            "nome":"Hepatite B",
+            "vencimento":"24/12/2024"
+          },
+          {
+            "nome":"Hepatite A",
+            "vencimento":"24/11/2023"
+          }
+        ]
+      }
+    }
+  ],
+  "vacinas": [
+    {
+      "nome": "BCG",
+      "faixa_etaria": [0,1]
+    },
+    {
+      "nome": "Hepatite A",
+      "faixa_etaria": [0,150]
+    },
+    {
+      "nome": "Hepatite B",
+      "faixa_etaria": [0,150]
+    },
+    {
+      "nome": "Penta (DTP/Hib/Hep. B)",
+      "faixa_etaria": [0,6]
+    },
+    {
+      "nome": "Pneumocócica 10 valente",
+      "faixa_etaria": [0,3]
+    },
+    {
+      "nome": "Vacina Inativada Poliomielite (VIP)",
+      "faixa_etaria":  [0,4]
+    },
+    {
+      "nome": "Vacina Oral Poliomielite (VOP)",
+      "faixa_etaria":  [0,6]
+    },
+    {
+      "nome": "Vacina Rotavírus Humano (VRH)",
+      "faixa_etaria": [0,6]
+    },
+    {
+      "nome": "Meningocócica C (conjugada)",
+      "faixa_etaria": [0,1]
+    },
+    {
+      "nome": "Febre amarela",
+      "faixa_etaria": [1,59]
+    },
+    {
+      "nome": "Tríplice viral",
+      "faixa_etaria": [1,59]
+    },
+    {
+      "nome": "Tetra viral",
+      "faixa_etaria": [1,6]
+    },
+    {
+      "nome": "DTPa (tríplice bacteriana)",
+      "faixa_etaria": [4,6]
+    },
+    {
+      "nome": "Varicela",
+      "faixa_etaria": [4,6]
+    },
+    {
+      "nome": "HPV quadrivalente",
+      "faixa_etaria": [9,14]
+    },
+    {
+      "nome": "dT (dupla adulto)",
+      "faixa_etaria": [7,150]
+    },
+    {
+      "nome": "dTpa (DTP adulto)",
+      "faixa_etaria": [4,150]
+    },
+    {
+      "nome": "Menigocócica ACWY",
+      "faixa_etaria": [0,59]
+    },
+    {
+      "nome": "covid",
+      "faixa_etaria": [5,150]
+    },
+    {
+      "nome": "dengue",
+      "faixa_etaria": [9,45]
+    },
+    {
+      "nome": "gripe",
+      "faixa_etaria": [0,150]
+    }
+  ]
+}

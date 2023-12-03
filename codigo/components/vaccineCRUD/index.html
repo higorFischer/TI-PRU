@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../../assets/css/index.css">
+  <link rel="stylesheet" type="text/css" href="../../assets/vendor/font-awesome/css/all.min.css">
+ 
+  <title>Cadastro Pru</title>
+</head>
+
+<body style="display: flex;">
+  <nav id="navbar"></nav>
+
+  <nav class="cabeçalho">
+    <div class="logo">
+      <a class="img" href="criarusuario.html"><img src="imgs/logo pru.png" alt=""></a>
+    </div>
+  </nav>
+  <div style="display: flex;flex-direction:  column;">
+    <!--cadastro-->
+
+    <form id="cadastro">
+      <label for="nome"><b>Nome Completo</b></label>
+      <input id="nome" type="text" placeholder="Insira o Nome Completo" name="nome" autocomplete="nome">
+
+      <label for="idade"><b>Idade</b></label>
+      <input id="idade" type="text" placeholder="Insira a Idade" name="idade" autocomplete="idade">
+
+      <label for="sexo"><b>Sexo</b></label>
+      <input id="sexo" type="text" placeholder="Insira seu Sexo" name="sexo" autocomplete="sexo">
+
+      <label for="raca"><b>Raça</b></label>
+      <input id="raca" type="text" placeholder="Insira sua raça" name="raca" autocomplete="raca">
+
+      
+      <label for="comorbidade"><b>Comorbidades</b></label>
+      <input id="comorbidade" type="text" placeholder="Insira suas comorbidades" name="comorbidade" autocomplete="comorbidade">
+
+      <label for="gestante"><b>É gestante?</b></label><br><br>
+      <select id="gestante" name="gestante" placeholder="Insira se é gestante?">
+        <option value="true">Sim</option>
+        <option value="false">Não</option>
+      </select><br><br>
+
+      <label for="email"><b>E-mail</b></label>
+      <input id="email" type="email" placeholder="Insira o E-mail" name="email" autocomplete="email">
+
+      <label for="vacinas_aplicadas"><b>Vacinas aplicadas</b></label>
+      <input id="vacinas_aplicadas" type="text" placeholder="Insira suas vacinas" name="vacinas_aplicadas" autocomplete="vacinas_aplicadas">
+
+      <label for="vencimento"><b>Vencimento</b></label>
+      <input id="vencimento" type="text" placeholder="Insira o vencimento da dose" name="vencimento" autocomplete="vencimento">
+      <!--
+        <label for="email"><b>Comorbidade</b></label>
+        <input id="comorbidade" type="text" placeholder="Insira sua Comorbidade" name="comorbidade">
+        <label for="Vacinas que tomou"><b>Vacinas que tomou</b></label>
+        <input type="text" placeholder="Insira as Vacinas" name="vacinas">
+
+        <label for="Vacinas a tomar"><b>Vacinas a tomar</b></label>
+        <input type="text" placeholder="Insira as Vacinas a tomar" name="Vacinas a tomar">
+
+        <label for="Lote da vacina"><b>Lote da vacina</b></label>
+        <input type="text" placeholder="Insira o Lote da vacina" name="Lote da vacina">
+
+        <label for="Vencimento"><b>Vencimento</b></label>
+        <input type="text" placeholder="Insira o Vencimento" name="Vencimento">
+
+        <label for="Data da próxima dose"><b>Data da próxima dose</b></label>
+        <input type="text" placeholder="Insira a Data" name="Data da próxima dose">
+      -->
+
+    </form>
+    <button  class="btnCadastrar" id="btnCadastrar" type="text">Cadastrar</button>
+    <div class="pru">
+      <a href="index.html"><img src="imgs/Pru.png" alt=""></a>
+    </div>
+    <div id="usuarios"></div>
+    
+    <footer>
+      
+
+      <p>copyright 2023</p>
+    </footer>
+  </div>
+</body>
+
+</html>
+<script src="index.js" defer></script>
+<script src="../../assets/js/navigation.js" defer></script>
+<script src="../../assets/js/auth.js" defer></script>

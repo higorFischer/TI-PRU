@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(156, 206, 234);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.mapBox {
+    position: relative;
+    width: 60vw;
+    height: 75vh;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+#places-list {
+    list-style: none;
+    padding: 0;
+}
+
+.place-item {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(85, 154, 193);
+    border-radius: 10px;
+    z-index: 1000;
+    font-size: larger;
+    color: white;
+}
+
+#nearby-pharmacies-container {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    width: 18vw;
+    max-width: 18vw;
+    background-color: rgb(85, 154, 193);
+    color: white;
+    font-size: 19px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+h3 img {
+    height: 2.5vh;
+}
+
+#nearby-pharmacies {
+    padding: 10px;
+}
+
+#nearby-pharmacies p {
+    margin: 0;
+}
+
+.search-container {
+    position: absolute;
+    top: 9.6%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+#search-input {
+    margin-right: 10px;
+    height: 3vh;
+    width: 30vw;
+    color: white;
+    background-color: rgb(85, 154, 193);
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(85, 154, 193);
+    padding-left: 20px;
+}
+
+input[type=text]:focus{
+    outline: 2px solid white;
+}
+
+input[type=text]{
+    font-size: 16px;
+}
+
+#btnOk {
+    height: 4vh;
+    width: 2vw;
+    font-size: 100%;
+    color: white;
+    background-color: rgb(85, 154, 193);
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(85, 154, 193);
+    padding: 0;
+}
+
+#btnOk:hover {
+    border-color: white;
+}
+
+::placeholder {
+    font-size: 16px;
+    color: white;
+}

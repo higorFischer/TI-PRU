@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../assets/vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/index.css">
+    <title>Urgência</title>
+  </head>
+  <body class="d-flex">
+
+    <nav id="navbar"></nav>
+
+    <!-- CORPO -->
+    <section class="d-flex " style="background-color: #b49b87; height:100%; margin-top: 56px; ">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="card mb-4">
+              <div class="card-body text-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/8090/8090406.png" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+                <h5 id="nomePrinc" class="my-3">Fulano</h5>
+                <p id="endPrinc" class="text-muted mb-4">Endereço</p>
+                <div class="d-flex justify-content-center mb-2">
+                  <a id="normalButton" class="btn btn-outline-primary ms-1 btn-md"style="background-color: #D2B48C; color: #fff;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#D2B48C'; this.style.color='#fff';">
+                    <div>
+                      <p style="margin-bottom: 0;">Modo Normal</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Carrossel de gráficos -->
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <!-- Primeiro slide (Hemograma) -->
+                <div class="carousel-item active">
+                  <div class="bg-white rounded">
+                    <!-- Dados para um Exame de Hemograma Fictício -->
+                    <div class="bg-white rounded p-4">
+                      <div class="row">
+                        <div class="col">
+                          <p class=""><span class="text-primary font-italic">Evolução</span> (Último Hemograma)</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="d-flex justify-content-between align-items-center mb-1">
+                            <p class="mb-0" style="font-size: .77rem; flex: 0 0 30%;">Hemoglobina</p>
+                            <div class="progress rounded" style="height: 5px; flex: 0 0 70%;">
+                              <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between align-items-center mb-1">
+                            <p class="mb-0" style="font-size: .77rem; flex: 0 0 30%;">Hematócrito</p>
+                            <div class="progress rounded" style="height: 5px; flex: 0 0 70%;">
+                              <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between align-items-center mb-1">
+                            <p class="mb-0" style="font-size: .77rem; flex: 0 0 30%;">Vcm</p>
+                            <div class="progress rounded" style="height: 5px; flex: 0 0 70%;">
+                              <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between align-items-center mb-1">
+                            <p class="mb-0" style="font-size: .77rem; flex: 0 0 30%;">Plaquetas</p>
+                            <div class="progress rounded" style="height: 5px; flex: 0 0 70%;">
+                              <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Fim dos Dados para um Exame de Hemograma Fictício -->
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="bg-white rounded">
+                    <!-- Dados para um Exame de Urina Fictício -->
+                    <div class="bg-white rounded p-4">
+                      <div class="row">
+                        <div class="col">
+                          <p class=""><span class="text-primary font-italic">Evolução</span> (Último Exame de Urina)</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="d-flex justify-content-between align-items-center mb-1">
+                            <p class="mb-0" style="font-size: .77rem; flex: 0 0 30%;">Proteína na Urina</p>
+                            <div class="progress rounded" style="height: 5px; flex: 0 0 70%;">
+                              <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between align-items-center mb-1">
+                            <p class="mb-0" style="font-size: .77rem; flex: 0 0 30%;">Glicose na Urina</p>
+                            <div class="progress rounded" style="height: 5px; flex: 0 0 70%;">
+                              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between align-items-center mb-1">
+                            <p class="mb-0" style="font-size: .77rem; flex: 0 0 30%;">Células Sanguíneas</p>
+                            <div class="progress rounded" style="height: 5px; flex: 0 0 70%;">
+                              <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between align-items-center mb-1">
+                            <p class="mb-0" style="font-size: .77rem; flex: 0 0 30%;">pH da Urina</p>
+                            <div class="progress rounded" style="height: 5px; flex: 0 0 70%;">
+                              <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Fim dos Dados para um Exame de Urina Fictício -->
+                  </div>
+                </div>
+                
+
+                <!-- Terceiro slide (Outro Exame) -->
+                <div class="carousel-item">
+                  <div class="bg-white rounded">
+                    <!-- Dados para um Exame de Fezes Fictício -->
+                    <div class="bg-white rounded p-4">
+                      <div class="row">
+                        <div class="col">
+                          <p class=""><span class="text-primary font-italic">Evolução</span> (Último Exame de Fezes)</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="d-flex justify-content-between align-items-center mb-1">
+                            <p class="mb-0" style="font-size: .77rem; flex: 0 0 30%;">Consistência das Fezes</p>
+                            <div class="progress rounded" style="height: 5px; flex: 0 0 70%;">
+                              <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between align-items-center mb-1">
+                            <p class="mb-0" style="font-size: .77rem; flex: 0 0 30%;">Sangue nas Fezes</p>
+                            <div class="progress rounded" style="height: 5px; flex: 0 0 70%;">
+                              <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between align-items-center mb-1">
+                            <p class="mb-0" style="font-size: .77rem; flex: 0 0 30%;">Parasitas nas Fezes</p>
+                            <div class="progress rounded" style="height: 5px; flex: 0 0 70%;">
+                              <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                          <div class="d-flex justify-content-between align-items-center mb-1">
+                            <p class="mb-0" style="font-size: .77rem; flex: 0 0 30%;">Cor das Fezes</p>
+                            <div class="progress rounded" style="height: 5px; flex: 0 0 70%;">
+                              <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Fim dos Dados para um Exame de Fezes Fictício -->
+                  </div>
+                </div>
+
+              </div>
+              <!-- Controles de navegação (setas) -->
+              <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next" style="right: -40px;">
+                <span class="carousel-control-next-icon btn-lg btn-primary" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+              </a>
+              <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev" style="left: -40px; ">
+                <span class="carousel-control-prev-icon btn-lg btn-primary" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </a>
+            </div>
+
+          </div>
+          <div class="col-lg-7">
+            <div class="card mb-4">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Endereço:</p>
+                  </div>
+                  <div id="endereco2" class="col-sm-9"></div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Tipo Sanguíneo:</p>
+                  </div>
+                  <div id="sangue2" class="col-sm-9"></div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Peso:</p>
+                  </div>
+                  <div id="peso2" class="col-sm-9"></div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Alergia:</p>
+                  </div>
+                  <div id="alergia2" class="col-sm-9"></div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Remédios em uso:</p>
+                  </div>
+                  <div id="remedio2" class="col-sm-9"></div>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <p class="mb-0">Histórico Médico:</p>
+                  </div>
+                  <div id="historico2" class="col-sm-9"></div>
+                </div>          
+
+              </div>
+            </div>
+
+           
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--CORPO-->
+
+  <!-- Bootstrap JS (coloque no final do corpo) -->
+  <script src="urgente.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-9mbdL41/jG53wA3Vfjv5SMw5hiOuXLe6FkZa6z4fFR5i3b3F5z5DDZGh7w7F5Z6w0" crossorigin="anonymous"></script>
+</body>
+</html>
+<script src="../../assets/js/navigation.js" defer></script>
+<script src="../../assets/js/auth.js" defer></script>
+<script>
+  let id = new URLSearchParams(window.location.search).get("id");
+  if(id == null)
+    window.location.replace("urgencia.html?id=1");
+</script>
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #b49b87;
+  }
+</style>

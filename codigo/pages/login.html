@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Document</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="../assets/css/index.css">
+</head>
+<body class="login">
+	<form>
+		<div class="login-container">
+			<img src="../assets/img/logo.png" />
+
+			<div class="form-group mb-3">
+				<label for="email"><b>Insira o E-mail</b></label>
+				<input class="form-control" id="email" type="email" placeholder="Insira o E-mail" name="email" autocomplete="email">
+			</div>
+
+			<div class="form-group mb-4">
+				<label for="email"><b>Insira a senha</b></label>
+				<input  class="form-control" id="password" type="password" placeholder="Insira o password" name="password" autocomplete="password">
+			</div>
+
+			<button class="btn btn-primary mb-2" id="login"> login</button>
+			<a href="cadastro.html"> Cadastro paciente</a>
+			<a href="cadastroProfissional.html"> Cadastro profissional</a>
+		</div>
+	</form>
+</body>
+</html>
+<script src="../components/login/index.js" defer></script>
+<script src="../assets/js/auth.js" defer></script>

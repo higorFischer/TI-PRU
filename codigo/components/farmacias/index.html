@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmácias Próximas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="map-container">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Pesquisar local">
+            <button onclick="searchLocation()" id="btnOk">OK</button>
+        </div>
+    
+        <div class="mapBox" id="map"></div>
+        <div id="nearby-pharmacies-container">
+            <h3>
+                <img src="/imgs/healthSymbol.webp" alt="healthSymbol"> Farmácias Próximas:</h3>
+            <div id="nearby-pharmacies"></div>
+        </div>
+    </div>
+
+    <ul id="places-list"></ul>
+
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzXPQDax3sDBWAOdAfSJ2tSCERMh_frJo&libraries=places&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzXPQDax3sDBWAOdAfSJ2tSCERMh_frJo&libraries=places&callback=initAutocomplete" async defer></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Doenças Crônicas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo1.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/logo1.png" alt="Logo">
+            <h1 class="title">Painel De Registro De Doença Crônica</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Registrar Doença Crônica</h2>
+                <form id="formDoenca">
+                    <div class="form-group">
+                        <label for="doencacronica">Nome da Doença</label>
+                        <input type="text" class="form-control" id="doencacronica" name="doencacronica">
+                    </div>
+                    <div class="form-group">
+                        <label for="datadiagnostico">Data do Diagnóstico</label>
+                        <input type="date" class="form-control" id="datadiagnostico" name="datadiagnostico">
+                    </div>
+                    <div class="form-group">
+                        <label for="medicamentos">Medicamentos Prescritos</label>
+                        <textarea class="form-control" id="medicamentos" name="medicamentos" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="ultimaconsulta">Última Consulta</label>
+                        <input type="date" class="form-control" id="ultimaconsulta" name="ultimaconsulta">
+                    </div>
+                    <div class="form-group">
+                        <label for="resumoconsulta">Resumo da Última Consulta</label>
+                        <textarea class="form-control" id="resumoconsulta" name="resumoconsulta" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="procedimentos">Procedimentos Médicos</label>
+                        <textarea class="form-control" id="procedimentos" name="procedimentos" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="resultados">Anexar Resultados de Exames</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                        <input type="file" class="form-control-file" id="resultados" name="resultados" accept=".jpg, .jpeg, .png, .pdf, .doc, .docx">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                </form>
+            </div>
+
+            <div class="col-md-4">
+                <h2>Comunicação com Médicos</h2>
+                <form id="formComunicacao">
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Informações Registradas</h2>
+        <div id="infoRegistradas">
+            <table>
+                <tr>
+                    <th>Nome da Doença</th>
+                    <th>Data do Diagnóstico</th>
+                    <th>Medicamentos Prescritos</th>
+                    <th>Última Consulta</th>
+                    <th>Resumo da Última Consulta</th>
+                    <th>Procedimentos Médicos</th>
+                    <th>Anexar Resultados de Exames</th>
+                    <th>Excluir❌</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

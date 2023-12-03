@@ -1,0 +1,22 @@
+{
+  "Exames": [
+    {
+      "nome": "Teste de Sangue",
+      "data": "15/02/2002",
+      "resultado": "A+",
+      "retorno": "Não"
+    },
+    {
+      "nome": "Vitamina D",
+      "data": "22/08/2008",
+      "resultado": "Em Falta",
+      "retorno": "05/12/2008"
+    },
+    {
+      "nome": "Refração",
+      "data": "13/05/2005",
+      "resultado": 0.75,
+      "retorno": "Não"
+    }
+  ]
+}

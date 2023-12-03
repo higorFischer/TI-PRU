@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="../assets/vendor/font-awesome/css/all.min.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="../assets/css/index.css">
+	</head>
+	<body>
+		<div id="container">
+			<nav id="navbar"></nav>
+			<div id="content">
+				<section>
+					<div class="container py-5">
+						<div class="row">
+							<div class="col-lg-5">
+								<div class="card mb-4">
+									<div class="card-body text-center">
+										<img src="https://cdn-icons-png.flaticon.com/512/8090/8090406.png" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+										<h5 id="nomePrinc" class="my-3">Fulano</h5>
+										<p id="endPrinc" class="text-muted mb-4">Endereço</p>
+										<div class="d-flex justify-content-center mb-2">
+											<a id="urgentButton" class="urgent-btn btn btn-outline-primary ms-1 btn-md" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='#8A0829'; this.style.color='#fff';">
+												<div>
+													<p style="margin-bottom: 0;">Modo Urgente</p>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="card mb-4" >
+									<div class="card-body">
+										<div class="row ">
+											<div class="col-sm-5">
+												<p class="mb-0">Nome:</p>
+											</div>
+											<div id="nome" class="col-sm-7"></div>
+										</div>
+										<hr class="m-0 my-1">
+										<div class="row">
+											<div class="col-sm-5">
+												<p class="mb-0">Data de Nascimento:</p>
+											</div>
+											<div id="dataNasc" class="col-sm-7"></div>
+										</div>
+										<hr class="m-0 my-1">
+										<div class="row">
+											<div class="col-sm-5">
+												<p class="mb-0">Endereço:</p>
+											</div>
+											<div id="endereco" class="col-sm-7"></div>
+										</div>
+										<hr class="m-0 my-1">
+										<div class="row">
+											<div class="col-sm-5">
+												<p class="mb-0">Sexo:</p>
+											</div>
+											<div id="sexo" class="col-sm-7"></div>
+										</div>
+										<hr class="m-0 my-1">
+										<div class="row">
+											<div class="col-sm-5">
+												<p class="mb-0">Tipo Sanguíneo:</p>
+											</div>
+											<div id="sangue" class="col-sm-7"></div>
+										</div>
+										<hr class="m-0 my-1">
+										<div class="row">
+											<div class="col-sm-5">
+												<p class="mb-0">Etnia:</p>
+											</div>
+											<div id="etnia" class="col-sm-7"></div>
+										</div>
+										<hr class="m-0 my-1">
+										<div class="row">
+											<div class="col-sm-5">
+												<p class="mb-0">Estado Civil:</p>
+											</div>
+											<div id="estadoC" class="col-sm-7"></div>
+										</div>
+										<hr class="m-0 my-1">
+										<div class="row">
+											<div class="col-sm-5">
+												<p class="mb-0">Altura:</p>
+											</div>
+											<div id="alt" class="col-sm-7"></div>
+										</div>
+										<hr class="m-0 my-1">
+										<div class="row">
+											<div class="col-sm-5">
+												<p class="mb-0">Peso:</p>
+											</div>
+											<div id="peso" class="col-sm-7"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-7">
+								<div class="bg-white rounded  mb-3">
+									<div class="bg-white rounded p-4">
+										<div class="row">
+											<div class="col">
+												<p class=""><span class="text-primary font-italic">Últimos Exames </span></p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col" id="exam-container">
+												Não existem exames
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="bg-white rounded mb-3">
+									<div class="bg-white rounded p-4">
+										<div class="row">
+											<div class="col">
+												<p class=""><span class="text-primary font-italic">Últimas Vacinas</span> </p>
+											</div>
+										</div>
+										<div class="w-100 d-flex" id="vaccines-container">
+											Não existem Vacinas
+										</div>
+									</div>
+								</div>
+								<div class="bg-white rounded mb-3">
+									<div class="bg-white rounded p-4">
+										<div class="row">
+											<div class="col">
+												<p class=""><span class="text-primary font-italic">Últimos Medicamentos</span> </p>
+											</div>
+										</div>
+										<div class="w-100 d-flex" id="medicines-container">
+											Não existem Vacinas
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../assets/js/navigation.js"></script>
+<script src="../assets/js/auth.js"></script>
+<script src="../components/infoCRUD/perfil.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

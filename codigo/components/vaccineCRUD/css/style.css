@@ -1,0 +1,186 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(147, 147, 249);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(87, 87, 243);
+  padding: auto;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+img {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  max-width: 200px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+}
+
+.nav-cabeçalho {
+  display: flex;
+  justify-content: flex;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: auto;
+  background-color: rgb(87, 87, 243);
+  padding: auto;
+  margin: 20px;
+  border-radius: 10px;
+  
+}
+
+footer>p {
+  color: white;
+}
+
+form>div {
+  display: inline-block;
+  padding: auto;
+  margin: 20px;
+  color: blue;
+
+}
+
+.row{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  height: 100vw;
+}
+
+input[type="text"] {
+  color: rgb(255, 255, 255);
+  background-color: rgb(147, 147, 249);
+  /* Cor de fundo cinza claro */
+  border: solid rgb(87, 87, 243);
+  /* Borda cinza */
+  padding: 10px;
+  /* Espaçamento interno */
+}
+
+input[type="text"]:focus {
+  background-color: #6469ff;
+  /* Cor de fundo branca quando focado */
+  border: 1px solid #7fa8ff;
+  /* Borda azul quando focado */
+}
+
+.pru {
+  display:flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-left: 20px;
+  display: flex;
+  width: 200px;
+}
+
+div>a>b {
+  display: flex;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 5%;
+  margin-right: 20px;
+  display: flex;
+  width: 200px;
+  float: right;
+}
+
+.btnCadastar{
+  font-size: auto;
+  width: 300px;
+  height: 30px;
+  background-color: rgb(87, 87, 243);
+  color: blue;
+  border: none;
+  padding: auto;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+
+.column {
+  flex: 1;
+}
+
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.serviços{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10%;
+  float: right;
+}
+.rodape{
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  padding: auto;
+}
+.criarusuario,.excluir{
+  display: flex;
+  flex-direction: column;
+  font-size: auto;
+  width: 150px;
+  height: 20px;
+  background-color: rgb(87, 87, 243);
+  color: blue;
+  border: none;
+  padding: auto;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+.exibirusuario{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  margin: 20px;
+  list-style-type: none;
+}
+
+.cadastro{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  margin: 20px;
+}
+.lista-usuarios{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}

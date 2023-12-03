@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades Próximas</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #9dcbe8;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            max-height: 70px;
+            margin-left: auto;
+        }
+
+        h1 {
+            color: #ffffff;
+            margin: 0;
+        }
+
+        #map {
+            height: 60vh;
+            flex: 1;
+        }
+
+        #search-container {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #search {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        #searchButton {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 1100px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .logo {
+                margin: 10px 0;
+            }
+
+            h1 {
+                font-size: 1.5em; 
+            }
+
+            #search-container {
+                top: 150px;
+            }
+        }
+
+        .legend {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        .legend img {
+            max-height: 20px;
+            /* Ajuste a altura conforme necessário */
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ㅤㅤUnidades Próximas</h1>
+        <img src="imgs/logo.png" alt="Logo do posto" class="logo">
+    </header>
+
+    <div id="search-container">
+        <input type="text" id="search" placeholder="Digite um local">
+        <button id="searchButton">Pesquisar</button>
+    </div>
+
+    <div id="map"></div>
+
+    <div class="legend">
+        <p><img src="imgs/hosp.png" alt="Hospitais"> Hospitais e demais unidades de saúde</p>
+        <p><img src="imgs/posto.png" alt="Farmácias"> Farmácias</p>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([0, 0], 15);
+        var currentMarker = null;
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+        }).addTo(map);
+
+        navigator.geolocation.getCurrentPosition(function(location) {
+            var latlng = new L.LatLng(location.coords.latitude, location.coords.longitude);
+            currentMarker = L.marker(latlng).addTo(map);
+            map.setView(latlng, 15);
+            updatePopup(latlng);
+        });
+
+        function updatePopup(latlng) {
+            fetch('https://api.opencagedata.com/geocode/v1/json?q=' + latlng.lat + '+' + latlng.lng + '&key=2da59c3fc0294ecd803b0d393d56c6d8')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erro na requisição da API');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    var address = data.results[0].formatted;
+                    map.openPopup(address, latlng);
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    alert('Erro ao obter o endereço do local. Tente novamente.');
+                });
+        }
+
+        function searchLocation() {
+            var query = document.getElementById('search').value;
+
+            fetch('https://api.opencagedata.com/geocode/v1/json?q=' + query + '&key=2da59c3fc0294ecd803b0d393d56c6d8')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erro na requisição da API');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    var latlng = new L.LatLng(data.results[0].geometry.lat, data.results[0].geometry.lng);
+
+                    if (currentMarker) {
+                        currentMarker.setLatLng(latlng);
+                    } else {
+                        currentMarker = L.marker(latlng).addTo(map);
+                    }
+
+                    map.setView(latlng, 15);
+                    updatePopup(latlng);
+                })
+                .catch(error => {
+                    console.error('Erro:', error);
+                    alert('Erro ao buscar o local. Tente novamente.');
+                });
+        }
+
+        function handleSearch() {
+            searchLocation();
+        }
+
+        document.getElementById('searchButton').addEventListener('click', handleSearch);
+
+        document.getElementById('search').addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                handleSearch();
+            }
+        });
+
+        map.on('click', function(e) {
+            var latlng = e.latlng;
+
+            updatePopup(latlng);
+        });
+    </script>
+
+</body>
+
+</html>

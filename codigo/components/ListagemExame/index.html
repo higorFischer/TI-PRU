@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Exames</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo1.png" alt="logo1"> </header>
+    <h1>Meus Exames</h1>
+    <button id="carregar-dados-button">Carregar Dados</button>
+
+    <div id="exams-container"></div>
+    <div id="exam-details"></div>
+
+    <div id="new-exam-form">
+        <h2>Adicionar Novo Exame:</h2>
+        <label for="numero-pedido">Número do Pedido:</label>
+        <input type="text" id="numero-pedido" required>
+        <label for="exam-name">Nome do Exame:</label>
+        <input type="text" id="exam-name" required>
+        <label for="exam-date">Data:</label>
+        <input type="date" id="exam-date" required>
+        <label for="exam-result">Resultado:</label>
+        <input type="text" id="exam-result" required>
+        <label for="reference-value">Valor de Referência:</label>
+        <input type="text" id="reference-value" required>
+        <button id="add-exam-button">Adicionar Exame</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

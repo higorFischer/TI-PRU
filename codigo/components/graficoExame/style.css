@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(156, 206, 234);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 44%;
+    color: white;
+    font-size: 300%;
+    background-color: rgb(85, 154, 193);
+    border-color: rgb(85, 154, 193);
+    border-radius: 10px;
+    width: 12%;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 200%;
+    color: rgb(248, 248, 248);
+    margin-left: 80%;
+    background-color: rgb(85, 154, 193);
+    border-color: rgb(85, 154, 193);
+    border-radius: 10px;
+    width: 15%;
+}
+
+ul li {
+    list-style-type: none;
+    color: rgb(248, 248, 248);
+    margin-left: 80%;
+    font-size: 135%;
+    background-color: rgb(85, 154, 193);
+    border-color: rgb(85, 154, 193);
+    border-radius: 10px;
+    width: 8%;
+    text-align: center;
+}
+
+
+#btnVoltar {
+    position: absolute;
+    bottom: 1%;
+    left: 10px;
+}
+
+#btnAlterarTipo {
+    position: absolute;
+    bottom: 1%;
+    right: 10px;
+}
+
+#btnAvancar {
+    position: absolute;
+    right: 10px;
+    margin-left: 92%;
+    bottom: 50%;
+    font-size: 250%;
+}
+
+#btnRetroceder {
+    position: absolute;
+    left: 10px;
+    bottom: 50%;
+    font-size: 250%;
+}
+
+.btn {
+    font-size: 150%;
+    background-color: rgb(85, 154, 193);
+    color: white;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(85, 154, 193);
+}
+
+#container {
+    margin: auto;
+    width: 50%;
+}

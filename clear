@@ -1,0 +1,47 @@
+[33mcommit dbfe7a5ab1bc27153074441b4c3cda98aeaa369f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Rodrigo Oliveira <rodrigo.oliveira.puc@gmail.com>
+Date:   Thu Sep 21 19:21:21 2023 -0300
+
+    Contexto problema
+
+[33mcommit a590c385eea6eb23d0a98d59092166424f3ad002[m
+Author: Higor Lopes <higorlopes@42codelab.com>
+Date:   Wed Sep 20 20:21:51 2023 -0300
+
+    ajustado intro
+
+[33mcommit a2d9c57fe75a54b358b1e80ed3a88b604d769f24[m
+Author: Higor Lopes <higorlopes@42codelab.com>
+Date:   Wed Sep 20 20:16:01 2023 -0300
+
+    finalizado introdução
+
+[33mcommit 5063625461e632b8ea9e51fe9eb57629594fb529[m[33m ([m[1;31morigin/Teste1[m[33m)[m
+Author: Higor Lopes <higorlopes@42codelab.com>
+Date:   Fri Sep 15 19:31:05 2023 -0300
+
+    Adicionado nome Higor Fischer
+
+[33mcommit 35598079bc010599fcb9eb5de9386511ecf11d23[m
+Author: Higor Lopes <higorlopes@42codelab.com>
+Date:   Fri Sep 15 19:26:44 2023 -0300
+
+    modificado readme
+
+[33mcommit d1151be737dbca47431fe536d7883c77478d1e90[m
+Author: Higor Lopes <higorlopes@42codelab.com>
+Date:   Fri Sep 15 19:11:25 2023 -0300
+
+    Adicionado divisão de trablho no README.ME
+
+[33mcommit 67c78257a6578ba186c7588c092ebaeb06ac0515[m
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Tue Sep 12 18:54:43 2023 +0000
+
+    Add online IDE url
+
+[33mcommit 3e58a677474fe11f4f4ddafc1adabe7485a5d20c[m
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Tue Sep 12 18:54:41 2023 +0000
+
+    Initial commit

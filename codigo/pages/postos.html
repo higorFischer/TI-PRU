@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../assets/vendor/font-awesome/css/all.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+	<link rel="stylesheet" href="../assets/css/map.css">
+</head>
+<body>
+	<div id="container">
+		<nav id="navbar"></nav>
+		<div id="content">
+			<section class="d-flex">
+				<div id="search-container">
+					<input type="text" id="search" placeholder="Digite um local">
+					<button id="searchButton">Pesquisar</button>
+				</div>
+				<div id="map"></div>
+
+				<div class="legend">
+					<p><img src="../assets/img/hosp.png" alt="Hospitais"> Hospitais e demais unidades de saúde</p>
+					<p><img src="../assets/img/posto.png" alt="Farmácias"> Farmácias</p>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>
+<script src="../assets/js/navigation.js"></script>
+<script src="../assets/js/auth.js"></script>
+<script src="../assets/js/map.js"></script>
+<script src="../components/infoCRUD/perfil.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>

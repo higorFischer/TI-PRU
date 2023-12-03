@@ -1,0 +1,18 @@
+[
+    {
+        "nomeDaDoenca": "Insuficiência renal crônica",
+        "dataDoDiagnostico": "01/01/2018",
+        "medicamentosPrescritos": "Dialisados",
+        "ultimaConsulta": "01/01/2023",
+        "resumoDaConsulta": "Paciente apresentou sintomas de anemia",
+        "procedimentosMedicos": "Terapia de reposição hematopoiética"
+    },
+    {
+        "nomeDaDoenca": "Mal de Parkinson",
+        "dataDoDiagnostico": "17/05/2010",
+        "medicamentosPrescritos": "Levodopa",
+        "ultimaConsulta": "01/02/2021",
+        "resumoDaConsulta": "Paciente apresentou problemas motoras",
+        "procedimentosMedicos": "Monitoramento neurológico"
+    }
+]
